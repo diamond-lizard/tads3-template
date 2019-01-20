@@ -3,6 +3,7 @@
 # Change the following to your liking:
 #
 
+# What your game's source and compiled file names start with:
 GAME_FILENAME_PREFIX := CHANGEME
 
 # Compile for debugging (include symbols) ?
