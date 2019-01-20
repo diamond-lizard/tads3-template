@@ -3,13 +3,13 @@
 # Change the following to your liking:
 #
 
-TARGET := CHANGEME
+GAME_FILENAME_PREFIX := CHANGEME
 
 # Compile for debugging (include symbols) ?
 T3_DEBUG := on
 
 # Source file
-T3_SOURCE_FILE := $(TARGET).t
+T3_SOURCE_FILE := $(GAME_FILENAME_PREFIX).t
 
 # Which language to use
 T3_LANGUAGE := en_us
@@ -22,7 +22,7 @@ T3_SYMBOL_DIRECTORY := obj
 T3_OBJECT_DIRECTORY := obj
 
 # What to call the final built game file
-T3_IMAGE_FILE_NAME := $(TARGET).t3
+T3_IMAGE_FILE_NAME := $(GAME_FILENAME_PREFIX).t3
 
 # What libraries to use
 T3_LIBRARIES := -lib system
@@ -55,12 +55,12 @@ T3MAKE_OPTS += -o $(T3_IMAGE_FILE_NAME)
 # What libraries to use
 T3MAKE_OPTS += $(T3_LIBRARIES)
 
-T3MAKE_OPTS += -source $(TARGET)
+T3MAKE_OPTS += -source $(GAME_FILENAME_PREFIX)
 
-$(TARGET).t3: $(T3_SOURCE_FILE)
+$(GAME_FILENAME_PREFIX).t3: $(T3_SOURCE_FILE)
 	t3make $(T3MAKE_OPTS)
 
-all: $(TARGET).t3
+all: $(GAME_FILENAME_PREFIX).t3
 
 clean:
 	rm -f $(T3_IMAGE_FILE_NAME)
