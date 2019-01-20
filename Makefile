@@ -61,3 +61,9 @@ T3MAKE_OPTS += -source $(TARGET)
 
 $(TARGET).t3: $(T3_SOURCE_FILE)
 	t3make $(T3MAKE_OPTS)
+
+clean:
+	rm -f $(T3_IMAGE_FILE_NAME)
+	rm -f $(T3_SYMBOL_DIRECTORY)/*
+	rm -f $(T3_OBJECT_DIRECTORY)/*
+	rm -f GameInfo.txt
