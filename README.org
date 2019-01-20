@@ -8,7 +8,9 @@ In order to make a real game from this template, you should at a minimum do the 
 
 3 - In the Makefile, change the value of GAME_FILENAME_PREFIX from CHANGME to whatever you set it to in step 2 above, without the .t extension.
 
-In addition, other options in the Makefile may be changed, deleted, or modified as you see fit.
+4 - Change the contents of this README.org file to whatever is relevant for your game.
+
+In addition, various options in the Makefile may be changed, deleted, or modified as you see fit, as can the LICENSE, if you like.
 
 To compile your game, just type "make".  The result should be a file named whatever you set your GAME_FILENAME_PREFIX to in step 3 above, with a .t3 extension.
 
