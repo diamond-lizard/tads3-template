@@ -11,6 +11,8 @@ T3_DEBUG := on
 
 # Which language to use
 T3_LANGUAGE := en_us
+
+# Which message style to use
 T3_MESSAGESTYLE := neu
 
 # What libraries to use
