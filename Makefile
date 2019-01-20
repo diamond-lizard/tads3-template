@@ -1,11 +1,9 @@
-TARGET := CHANGEME
-
-all: $(TARGET).t3
-
 ################################################################
 #
 # Change the following to your liking:
 #
+
+TARGET := CHANGEME
 
 # Compile for debugging (include symbols) ?
 T3_DEBUG := on
@@ -61,6 +59,8 @@ T3MAKE_OPTS += -source $(TARGET)
 
 $(TARGET).t3: $(T3_SOURCE_FILE)
 	t3make $(T3MAKE_OPTS)
+
+all: $(TARGET).t3
 
 clean:
 	rm -f $(T3_IMAGE_FILE_NAME)
