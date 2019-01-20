@@ -8,7 +8,7 @@ gameMain: GameMainDef
 versionInfo: GameID
   name = 'My First Game'
   byline = 'by Bob Author'
-  authorEmail = 'Bob Author <bob@myisp.com>'
+  authorEmail = 'Bob Author <example@example.com>'
   desc = 'This is an example of how to start a new game project. '
   version = '1'
   IFID = 'b8563851-6257-77c3-04ee-278ceaeb48ac'
