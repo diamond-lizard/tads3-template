@@ -1,0 +1,4 @@
+all: CHANGEME.t3
+
+CHANGEME.t3: CHANGEME.t3m CHANGEME.t3
+	t3make -d -f CHANGEME
