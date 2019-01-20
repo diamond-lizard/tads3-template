@@ -1,3 +1,15 @@
-The source code in this directory was created from the instructions in:
+This is a template for creating [[http://www.tads.org/][TADS 3]] games, based on instructions in [[http://www.tads.org/t3doc/doc/gsg/creatingyourfirsttads3project.htm][Getting Started in TADS 3]]
 
-  http://www.tads.org/t3doc/doc/gsg/creatingyourfirsttads3project.htm
+In order to make a real game from this template, you should at a minimum do the following:
+
+1 - Change the contents of the CHANGEME.t file according to your tastes.  Your game program should go here.
+
+2 - Rename CHANGEME.t to whatever you want your game to be called, but retaining the .t extension.
+
+3 - In the Makefile, change the value of GAME_FILENAME_PREFIX from CHANGME to whatever you set it to in step 2 above, without the .t extension.
+
+In addition, other options in the Makefile may be changed, deleted, or modified as you see fit.
+
+To compile your game, just type "make".  The result should be a file named whatever you set your GAME_FILENAME_PREFIX to in step 3 above, with a .t3 extension.
+
+Some intermediate files will be generated in the "obj" directory (or whatever directories you set T3_SYMBOL_DIRECTORY and T3_OBJECT_DIRECTORY to in the Makefile).  You can ignore them, but if you want to delete them along with the compiled game file type "make clean".
